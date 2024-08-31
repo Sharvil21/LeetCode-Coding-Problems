@@ -21,4 +21,12 @@ class Solution:
         
         return output
 
-#Second Solution                    
+#Second Solution
+class Solution:
+    def numberGame(self, nums: List[int]) -> List[int]:
+        nums.sort()
+        ans = nums.copy()
+        for i in range(0,len(nums),2):
+            ans[i]=nums[i+1]
+            ans[i+1] = nums[i]
+        return(ans)                    
