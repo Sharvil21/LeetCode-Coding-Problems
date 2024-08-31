@@ -1,3 +1,4 @@
+#First solution
 class Solution:
     def numberGame(self, nums: List[int]) -> List[int]:
         first_min = 0
