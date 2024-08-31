@@ -21,4 +21,4 @@ class Solution:
         
         return output
 
-#                    
+#Second Solution                    
