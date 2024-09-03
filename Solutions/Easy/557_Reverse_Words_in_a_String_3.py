@@ -7,3 +7,9 @@ class Solution:
         return output.strip()
 
 #Second Solution
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s,ans=list(s.split()),[]
+        for i in s:
+            ans.append(i[::-1])
+        return ' '.join(ans)
