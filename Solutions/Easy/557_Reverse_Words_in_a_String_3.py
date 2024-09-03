@@ -5,3 +5,5 @@ class Solution:
         for i in s.split():
             output = output + i[::-1] + ' '
         return output.strip()
+
+#
