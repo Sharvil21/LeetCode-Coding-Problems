@@ -6,4 +6,4 @@ class Solution:
             output = output + i[::-1] + ' '
         return output.strip()
 
-#
+#Second Solution
