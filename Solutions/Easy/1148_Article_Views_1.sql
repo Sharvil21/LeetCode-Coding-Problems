@@ -6,4 +6,4 @@ FROM Views
 WHERE viewer_id = author_id
 ORDER BY 1 ASC;
 
---
+--PostgreSQL Solution
