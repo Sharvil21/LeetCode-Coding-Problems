@@ -5,4 +5,4 @@ employee_id, CASE WHEN employee_id%2!=0 AND SUBSTRING(name,1,1)!='M' THEN salary
 FROM Employees
 ORDER BY 1;
 
---
+--PostgreSQL Solution
