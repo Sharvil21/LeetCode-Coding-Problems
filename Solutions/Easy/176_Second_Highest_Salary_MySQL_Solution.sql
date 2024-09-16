@@ -8,4 +8,4 @@ OFFSET 1
 )
 AS SecondHighestSalary;
 
---2nd solution
+--2nd solutio
