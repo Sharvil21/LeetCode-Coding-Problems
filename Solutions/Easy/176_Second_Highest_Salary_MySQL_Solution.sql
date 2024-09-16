@@ -8,4 +8,6 @@ OFFSET 1
 )
 AS SecondHighestSalary;
 
---2nd solutio
+--2nd solution
+SELECT MAX(salary) AS SecondHighestSalary FROM Employee WHERE salary < (SELECT MAX(salary)FROM Employee);
+
