@@ -10,4 +10,4 @@ FROM cte
 WHERE rnk = 2)
 AS SecondHighestSalary
 
---Second Postgresql Solution
+--Second Postgresql Solutio
