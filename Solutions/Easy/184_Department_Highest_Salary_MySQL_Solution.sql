@@ -1,5 +1,4 @@
 --MySQL Solution
-# Write your MySQL query statement below
 WITH cte AS (
     SELECT
     d.name AS Department, e.name AS Employee, e.salary AS Salary, DENSE_RANK() OVER(PARTITION BY d.name ORDER BY e.salary DESC) AS rnk
