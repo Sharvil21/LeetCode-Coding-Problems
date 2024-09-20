@@ -1,5 +1,5 @@
 --PostgreSQL Solution
 SELECT
-score, DENSE_RANK() OVER(ORDER BY score DESC) AS 'rank'
+score, DENSE_RANK() OVER(ORDER BY score DESC) AS rank
 FROM
 Scores;
