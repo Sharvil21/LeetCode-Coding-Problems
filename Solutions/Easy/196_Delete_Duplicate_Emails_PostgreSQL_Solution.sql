@@ -9,4 +9,4 @@ ON a.email = b.email AND a.id < b.id)
 DELETE FROM PERSON
 WHERE id IN (SELECT * FROM cte)
 
-
+--
