@@ -22,3 +22,7 @@ UNION SELECT NULL, 'Low Salary'
 UNION SELECT NULL, 'Average Salary'
 UNION SELECT NULL, 'High Salary'
 )
+SELECT
+category, COUNT(account_id) AS accounts_count
+FROM cte1
+GROUP BY 1
