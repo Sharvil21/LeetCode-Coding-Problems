@@ -6,3 +6,4 @@ def find_classes(courses: pd.DataFrame) -> pd.DataFrame:
     return df.query("Total_Students > 5")[['class']]
 
 #Another Pandas Solution
+import pandas as pd
