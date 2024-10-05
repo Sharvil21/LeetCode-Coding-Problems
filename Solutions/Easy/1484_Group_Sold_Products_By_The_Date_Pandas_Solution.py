@@ -1,4 +1,4 @@
-##Pandas Solution (Have to use Lambda Function)
+#Pandas Solution (Have to use Lambda Function)
 import pandas as pd
 
 def categorize_products(activities: pd.DataFrame) -> pd.DataFrame:
