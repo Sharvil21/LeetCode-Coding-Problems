@@ -5,3 +5,5 @@ name
 FROM Employee
 WHERE 
 id IN (SELECT managerId FROM Employee GROUP BY 1 HAVING COUNT(*) > 4 )
+
+-- 2nd PostgreSQL solution
