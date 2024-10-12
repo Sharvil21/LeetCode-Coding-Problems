@@ -7,3 +7,7 @@ def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
     return employee.query("id in @managers")['name'].to_frame('name')
 
 #Pandas Solution
+import pandas as pd
+
+def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
+    return employee[ employee.id.isin(employee.groupby('managerId', as_index=0).count().query('id > 4')['managerId']) ][['name']] 
