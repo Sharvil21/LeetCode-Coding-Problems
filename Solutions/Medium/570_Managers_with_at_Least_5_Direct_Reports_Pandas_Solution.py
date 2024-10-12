@@ -6,4 +6,4 @@ def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
     managers = df.loc[df['total_reports']>=5,'managerId']
     return employee.query("id in @managers")['name'].to_frame('name')
 
-#
+#Pandas Solution
