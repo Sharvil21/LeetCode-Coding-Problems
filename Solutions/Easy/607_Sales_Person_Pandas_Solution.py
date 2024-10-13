@@ -21,3 +21,7 @@ def sales_person(sales_person: pd.DataFrame, company: pd.DataFrame, orders: pd.D
     ][['name']]
 
 #Third Pandas Solution
+import pandas as pd
+
+def sales_person(sales_person: pd.DataFrame, company: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
+    return sales_person[~(sales_person['sales_id'].isin(orders))]['name'].to_frame()
