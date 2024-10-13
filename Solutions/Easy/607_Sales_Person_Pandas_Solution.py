@@ -7,4 +7,5 @@ def sales_person(sales_person: pd.DataFrame, company: pd.DataFrame, orders: pd.D
     names_to_be_excluded = final_df.loc[final_df['name_y']=='RED','name_x']
     return sales_person.query("name not in @names_to_be_excluded")['name'].to_frame('name')
 
-#
+#Pandas SOlution
+
