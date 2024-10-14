@@ -4,7 +4,7 @@ SalesPerson.name
 FROM SalesPerson
 LEFT JOIN Orders USING(sales_id)
 LEFT JOIN Company USING(com_id)
-WHERE Company.name = "RED")
+WHERE Company.name = 'RED')
 
 SELECT
 name
