@@ -10,4 +10,4 @@ FROM Samples
 GROUP BY 1,2,3
 ORDER BY 1
 
---
+--2nd PostgreSQL Solutio
