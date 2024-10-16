@@ -1,6 +1,5 @@
 --PostgreSQL Solution
 -- Write your PostgreSQL query statement below
--- Write your PostgreSQL query statement below
 SELECT
 sample_id, dna_sequence, species,
 SUM(CASE WHEN dna_sequence ~* '^ATG' THEN 1 ELSE 0 END) AS has_start,
