@@ -11,6 +11,7 @@ GROUP BY 1,2,3
 ORDER BY 1
 
 --2nd PostgreSQL Solution
+-- Write your PostgreSQL query statement below
 SELECT sample_id,
        dna_sequence,
        species,
