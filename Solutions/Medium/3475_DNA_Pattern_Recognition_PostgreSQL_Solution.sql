@@ -10,4 +10,13 @@ FROM Samples
 GROUP BY 1,2,3
 ORDER BY 1
 
---2nd PostgreSQL Solutio
+--2nd PostgreSQL Solution
+SELECT sample_id,
+       dna_sequence,
+       species,
+       dna_sequence ~ '^ATG'           AS has_start,
+       dna_sequence ~ 'TAA$|TAG$|TGA$' AS has_stop,
+       dna_sequence ~ '.*ATAT.*'       AS has_atat,
+       dna_sequence ~ '.*GGG.*'        AS has_ggg
+  FROM samples
+ ORDER BY sample_id;
