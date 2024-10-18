@@ -8,3 +8,5 @@ def analyze_dna_patterns(samples: pd.DataFrame) -> pd.DataFrame:
     samples['has_atat'] = samples['dna_sequence'].str.contains("ATAT").astype(int)
     samples['has_ggg'] = samples['dna_sequence'].str.contains("(G{4}|G{3})").astype(int)
     return samples
+
+#
