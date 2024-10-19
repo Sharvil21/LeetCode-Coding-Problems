@@ -1,4 +1,5 @@
 #Pandas Solution
+#Find products that weren't purchased in that date range. Then use .query() method to filter them out
 import pandas as pd
 
 def sales_analysis(product: pd.DataFrame, sales: pd.DataFrame) -> pd.DataFrame:
