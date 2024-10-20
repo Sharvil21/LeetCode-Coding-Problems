@@ -1,1 +1,1 @@
---PostgreSQL Solution (Beats 71.12%
+--PostgreSQL Solution (Beats 71.12%)
