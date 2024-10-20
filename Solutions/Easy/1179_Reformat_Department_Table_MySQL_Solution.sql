@@ -1,5 +1,4 @@
 --MySQL Solution
--- Write your PostgreSQL query statement below
 SELECT
 id,
 SUM(CASE WHEN month = 'Jan' THEN revenue ELSE NULL END) AS Jan_Revenue,
