@@ -1,1 +1,1 @@
-#Python Solution
+#Python Solution using floor division
