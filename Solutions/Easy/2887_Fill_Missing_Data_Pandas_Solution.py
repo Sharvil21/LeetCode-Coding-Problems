@@ -6,4 +6,5 @@ def fillMissingValues(products: pd.DataFrame) -> pd.DataFrame:
     return products
 
 
-#Another Pandas Solution
+#Another Pandas Solution using .fillna() method
+
