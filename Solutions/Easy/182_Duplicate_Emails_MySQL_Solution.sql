@@ -9,4 +9,4 @@ HAVING COUNT(email) > 1)
 SELECT email AS Email
 FROM cte
 
--- A
+--Another MySQL Solution
