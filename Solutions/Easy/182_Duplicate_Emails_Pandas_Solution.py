@@ -9,3 +9,7 @@ def duplicate_emails(person: pd.DataFrame) -> pd.DataFrame:
 
 #Another Pandas Solution using  using value_counts() method
 import pandas as pd
+
+def duplicate_emails(person: pd.DataFrame) -> pd.DataFrame:
+    df = person['email'].value_counts().reset_index().rename(columns={'email':'Email'})
+    return df.loc[df['count']>1,'Email'].to_frame()
