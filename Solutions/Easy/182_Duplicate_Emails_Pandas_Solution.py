@@ -7,4 +7,4 @@ def duplicate_emails(person: pd.DataFrame) -> pd.DataFrame:
     return df3[['Email']]
 
 
-#Another Pandas Solution
+#Another Pandas Solution using  using value_counts() method
