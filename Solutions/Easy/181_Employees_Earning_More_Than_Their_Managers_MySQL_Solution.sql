@@ -1,1 +1,1 @@
---MySQL Solution
+--MySQL Solution using Self Join
