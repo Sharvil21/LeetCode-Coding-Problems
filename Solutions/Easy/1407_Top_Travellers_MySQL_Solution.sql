@@ -1,1 +1,1 @@
---MySQL Solution
+--MySQL Solution using left join and CASE WHEN
