@@ -1,1 +1,1 @@
---PostgreSQL Solution
+--PostgreSQL Solution using INITCAP() function
