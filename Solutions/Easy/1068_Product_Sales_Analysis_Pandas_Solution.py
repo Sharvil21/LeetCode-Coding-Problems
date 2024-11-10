@@ -14,3 +14,8 @@ def sales_analysis(sales: pd.DataFrame,
     return pd.merge(sales, product).iloc[:,[5,2,4]]
 
 #3rd Pandas Solution
+import pandas as pd
+
+def sales_analysis(sales: pd.DataFrame, product: pd.DataFrame) -> pd.DataFrame:
+    return pd.merge(sales, product, on='product_id')[['product_name', 'year', 'price']]
+    
