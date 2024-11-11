@@ -14,6 +14,5 @@ def sales_analysis(sales: pd.DataFrame,
     return pd.merge(sales, product).iloc[:,[5,2,4]]
 
 #3rd Pandas Solution straightforward approach by merging the two tables then select the 3 columns required directly
-import pandas as pd
 
     
