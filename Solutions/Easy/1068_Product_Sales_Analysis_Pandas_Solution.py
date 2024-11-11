@@ -13,3 +13,4 @@ def sales_analysis(sales: pd.DataFrame,
 
     return pd.merge(sales, product).iloc[:,[5,2,4]]
 
+#
