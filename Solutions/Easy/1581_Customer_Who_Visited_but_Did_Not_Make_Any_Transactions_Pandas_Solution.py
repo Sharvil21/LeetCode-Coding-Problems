@@ -7,4 +7,4 @@ def find_customers(visits: pd.DataFrame, transactions: pd.DataFrame) -> pd.DataF
     op = df.query("transaction_id.isna()").groupby('customer_id').agg(count_no_trans=('customer_id','count'))
     return op.reset_index().sort_values(by='count_no_trans',ascending=False)
 
-#
+#Another 1
