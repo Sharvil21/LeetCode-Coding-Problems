@@ -19,3 +19,14 @@ def find_customers(visits: pd.DataFrame, transactions: pd.DataFrame) -> pd.DataF
     return df
 
 #3rd Pandas Solution
+import pandas as pd
+
+def find_customers(visits: pd.DataFrame, transactions: pd.DataFrame) -> pd.DataFrame:
+    #Left joining visits and transactions dataframe on visit_id
+    merge_df = pd.merge(visits, transactions, on='visit_id', how='left')
+    # filtering only null value columns in merged dataframe
+    merge_df = merge_df[merge_df['transaction_id'].isna()]
+    # grouping data based on customer-id and count the no of visits, use rest_index() to maintained both grouped data
+    merge_df = merge_df.groupby(['customer_id'])['visit_id'].count().reset_index()
+    # rename the column visit_id to count_no_trans and return result
+    return merge_df.rename({'visit_id':'count_no_trans'},axis = 1) 
