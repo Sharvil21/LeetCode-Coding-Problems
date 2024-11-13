@@ -18,7 +18,7 @@ def find_customers(visits: pd.DataFrame, transactions: pd.DataFrame) -> pd.DataF
 
     return df
 
-#3rd Pandas Solution with detailed
+#3rd Pandas Solution with detailed explanation
 import pandas as pd
 
 def find_customers(visits: pd.DataFrame, transactions: pd.DataFrame) -> pd.DataFrame:
