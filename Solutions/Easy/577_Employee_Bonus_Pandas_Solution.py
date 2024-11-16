@@ -11,3 +11,4 @@ def employee_bonus(employee: pd.DataFrame, bonus: pd.DataFrame) -> pd.DataFrame:
      return df.loc[(df['bonus'] < 1000) | (df['bonus'].isna()),['name','bonus']]
 
 #Another Pandas Solution
+#Same steps as first solution
