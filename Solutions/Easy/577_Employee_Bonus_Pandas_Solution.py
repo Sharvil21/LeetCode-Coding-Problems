@@ -14,3 +14,11 @@ def employee_bonus(employee: pd.DataFrame, bonus: pd.DataFrame) -> pd.DataFrame:
 #Same steps as first solution
 #Difference will be in the last steps
 #Instead of specifying the names of columns, we specify the indexes using iloc
+import pandas as pd
+
+def employee_bonus(employee: pd.DataFrame, bonus: pd.DataFrame) -> pd.DataFrame:
+
+    df = employee.merge(bonus, how = 'left', on = 'empId')
+
+    return df[(df.bonus < 1000)|(df.bonus.isnull())].iloc[:,[1,4]]
+    
