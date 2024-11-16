@@ -13,3 +13,4 @@ def employee_bonus(employee: pd.DataFrame, bonus: pd.DataFrame) -> pd.DataFrame:
 #Another Pandas Solution
 #Same steps as first solution
 #Difference will be in the last steps
+#Instead of specifying the names of columns, we specify the indexes using iloc
