@@ -5,4 +5,5 @@
 #Step 4: Group by user_id and count all messages (df_total).
 #Step 5: Merge df_total and df_confirmations to combine total and confirmed messages.
 #Step 6: Fill NaN values with 0 after merging using .fillna() method again
-#Step 7: Rename the columns,
+#Step 7: Rename the columns, calculate the confirmation_rate by creating a new column and taking the division of the two required columns
+
