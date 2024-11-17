@@ -6,4 +6,4 @@
 #Step 5: Merge df_total and df_confirmations to combine total and confirmed messages.
 #Step 6: Fill NaN values with 0 after merging using .fillna() method again
 #Step 7: Rename the columns, calculate the confirmation_rate by creating a new column and taking the division of the two required columns
-
+#Step 8: Return the final DataFrame with user_id and confirmation_rate, then use the .round() function with argument as 2 to round the value to 2 decimal places
