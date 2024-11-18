@@ -8,3 +8,13 @@
 #Step 7: Rename the columns, calculate the confirmation_rate by creating a new column and taking the division of the two required columns
 #Step 8: Return the final DataFrame with user_id and confirmation_rate, then use the .round() function with argument as 2 to round the value to 2 decimal placesimport pandas as pd
 
+import pandas as pd
+
+def confirmation_rate(signups: pd.DataFrame, confirmations: pd.DataFrame) -> pd.DataFrame:
+    df = signups.merge(confirmations,on='user_id',how='left')
+    df.fillna(0,inplace=True)
+    df_confirmations = df[df['action']=='confirmed'].groupby('user_id')['action'].count().reset_index()
+    df_total = df.groupby('user_id')['action'].count().reset_index()
+    finaldf= df_total.merge(df_confirmations,on='user_id',how='left').fillna(0).rename(columns={'action_x':'total_messages','action_y':'confirmation_messages'})
+    finaldf['confirmation_rate'] =finaldf['confirmation_messages']/finaldf['total_messages']
+    return finaldf[['user_id','confirmation_rate']].round(2)
