@@ -20,4 +20,4 @@ def confirmation_rate(signups: pd.DataFrame, confirmations: pd.DataFrame) -> pd.
     return finaldf[['user_id','confirmation_rate']].round(2)
 
 
-#Another Pandas Solution
+#Another Pandas Solution using lambda function
