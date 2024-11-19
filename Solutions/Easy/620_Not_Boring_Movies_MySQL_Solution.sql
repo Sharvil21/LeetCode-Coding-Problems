@@ -1,5 +1,5 @@
 --MySQL Solution
---Simply filter the rows
+--Simply filter the rows using WHERE clause
 SELECT
 *
 FROM
