@@ -18,3 +18,6 @@ def confirmation_rate(signups: pd.DataFrame, confirmations: pd.DataFrame) -> pd.
     finaldf= df_total.merge(df_confirmations,on='user_id',how='left').fillna(0).rename(columns={'action_x':'total_messages','action_y':'confirmation_messages'})
     finaldf['confirmation_rate'] =finaldf['confirmation_messages']/finaldf['total_messages']
     return finaldf[['user_id','confirmation_rate']].round(2)
+
+
+#
