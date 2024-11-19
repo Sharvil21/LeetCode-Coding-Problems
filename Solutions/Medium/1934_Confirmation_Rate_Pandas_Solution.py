@@ -23,3 +23,12 @@ def confirmation_rate(signups: pd.DataFrame, confirmations: pd.DataFrame) -> pd.
 #Another Pandas Solution using lambda function.
 # Similar to CASE WHEN statements in SQL, we can use Lambda functions to create a new column that shows the values we want.
 #the code is .apply(lambda x:1 if x=='confirmed' else 0)
+
+import pandas as pd
+
+def confirmation_rate(signups: pd.DataFrame, confirmations: pd.DataFrame) -> pd.DataFrame:
+    df = signups.merge(confirmations,on='user_id',how='left').fillna(0)
+    df['confirmations'] = df['action'].apply(lambda x:1 if x == 'confirmed' else 0)
+    final_df = df.groupby('user_id').agg(total_confirmations=('confirmations','sum'),total_actions=('action','count')).reset_index()
+    final_df['confirmation_rate'] = final_df['total_confirmations']/final_df['total_actions']
+    return final_df[['user_id','confirmation_rate']].round(2)
