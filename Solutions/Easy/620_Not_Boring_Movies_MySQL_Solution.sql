@@ -8,3 +8,6 @@ ORDER BY rating DESC;
 
 --Another MYSQL Solution
 --This time use <> instead of NOT LIKE in the WHERE clause
+SELECT
+*
+FROM
