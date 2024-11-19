@@ -20,4 +20,5 @@ def confirmation_rate(signups: pd.DataFrame, confirmations: pd.DataFrame) -> pd.
     return finaldf[['user_id','confirmation_rate']].round(2)
 
 
-#Another Pandas Solution using lambda function
+#Another Pandas Solution using lambda function.
+# Similar to CASE WHEN statements in SQL, we can use Lambda functions to create a new column that shows the values we want. 
