@@ -8,6 +8,6 @@ ORDER BY rating DESC;
 
 --Another MYSQL Solution
 --This time use <> instead of NOT LIKE in the WHERE clause
-SELECT
-*
-FROM
+
+SELECT * FROM Cinema WHERE MOD( id, 2) = 1 AND 
+description <> 'boring' ORDER BY rating DESC
