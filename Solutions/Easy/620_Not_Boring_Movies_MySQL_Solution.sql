@@ -1,4 +1,5 @@
 --MySQL Solution
+--Simply filter the rows
 SELECT
 *
 FROM
