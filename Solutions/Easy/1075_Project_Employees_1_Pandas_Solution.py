@@ -1,5 +1,6 @@
 #Pandas Solution
 #Step 1 : Merge the two tables using Inner JOIN
+#Step 2: Group by project_id
 import pandas as pd
 
 def project_employees_i(project: pd.DataFrame, employee: pd.DataFrame) -> pd.DataFrame:
