@@ -2,6 +2,7 @@
 #Step 1 : Merge the two tables using Inner JOIN
 #Step 2: Group by project_id
 #Step 3:use the .mean() method to get the avg experience years
+#Step 4: rename the columns and return the output
 import pandas as pd
 
 def project_employees_i(project: pd.DataFrame, employee: pd.DataFrame) -> pd.DataFrame:
