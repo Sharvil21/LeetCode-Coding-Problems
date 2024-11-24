@@ -1,6 +1,5 @@
 #Pandas Solution
 import pandas as pd
-import pandas as pd
 
 def monthly_transactions(transactions: pd.DataFrame) -> pd.DataFrame:
     transactions['month'] = transactions['trans_date'].dt.year.astype(str) + '-' + transactions['trans_date'].dt.month.astype(str).str.zfill(2)
