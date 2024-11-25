@@ -19,4 +19,4 @@ def monthly_transactions(transactions: pd.DataFrame) -> pd.DataFrame:
     return transactions.groupby(['month','country'],dropna=False).agg(trans_count=('id','count'),approved_count=('approved_total_count','sum'),trans_total_amount=('amount','sum'),approved_total_amount=('approved_total_amount','sum')).reset_index()
 
 
-#Third Pandas Solution
+#Third Pandas Solution using numpy np.where
