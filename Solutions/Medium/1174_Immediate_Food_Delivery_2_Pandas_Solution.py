@@ -14,3 +14,10 @@ def immediate_food_delivery(delivery: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame({'immediate_percentage':100*value},index=[0]).round(2)
 
 #Another Pandas Solution with slight modification while creating the dataframe
+import pandas as pd
+
+def immediate_food_delivery(delivery: pd.DataFrame) -> pd.DataFrame:
+    delivery['first_order_date'] = delivery.groupby('customer_id')['order_date'].transform('min')
+    delivery['condition_satisfied'] = delivery.apply(lambda x:1 if x['customer_pref_delivery_date'] == x['first_order_date'] else 0, axis = 1)
+    value = (delivery['condition_satisfied'].sum())/(delivery['customer_id'].nunique())
+    return pd.DataFrame({'immediate_percentage':[100*value]}).round(2)
