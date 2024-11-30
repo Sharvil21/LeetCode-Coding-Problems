@@ -14,3 +14,4 @@ def sales_analysis(sales: pd.DataFrame, product: pd.DataFrame) -> pd.DataFrame:
 
 #Another Pandas Solution
 #This time, we use .transform() method 
+#Merge the two dataframes first.
