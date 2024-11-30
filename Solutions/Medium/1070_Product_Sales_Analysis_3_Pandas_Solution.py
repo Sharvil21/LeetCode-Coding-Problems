@@ -12,4 +12,4 @@ def sales_analysis(sales: pd.DataFrame, product: pd.DataFrame) -> pd.DataFrame:
     df['rnk'] = df.groupby('product_id')['year'].rank(method='dense',ascending=True)
     return df.loc[df['rnk']==1,['product_id','year','quantity','price']].rename(columns={'year':'first_year'})
 
-#
+#Another Pandas Solution
