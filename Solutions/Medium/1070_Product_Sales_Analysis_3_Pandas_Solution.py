@@ -18,3 +18,4 @@ def sales_analysis(sales: pd.DataFrame, product: pd.DataFrame) -> pd.DataFrame:
 #Then get the min date for each product id. That will be the first year date
 #How to get it? - Basically, group by the product_id, then choose year, then use .transform() method and specify 'min' as argument inside .transform
 #Put those values in a separate column in the dataframe
+#Now filter out the rows where the year == first_year (basically the min year value). No need to drop dupicate values here
