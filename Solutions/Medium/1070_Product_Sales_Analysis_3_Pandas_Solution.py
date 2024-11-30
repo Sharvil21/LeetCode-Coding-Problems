@@ -13,3 +13,4 @@ def sales_analysis(sales: pd.DataFrame, product: pd.DataFrame) -> pd.DataFrame:
     return df.loc[df['rnk']==1,['product_id','year','quantity','price']].rename(columns={'year':'first_year'})
 
 #Another Pandas Solution
+#This time, we use .transform() method 
