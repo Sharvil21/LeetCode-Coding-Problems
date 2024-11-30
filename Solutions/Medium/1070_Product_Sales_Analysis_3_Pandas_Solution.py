@@ -16,3 +16,4 @@ def sales_analysis(sales: pd.DataFrame, product: pd.DataFrame) -> pd.DataFrame:
 #This time, we use .transform() method 
 #Merge the two dataframes first.
 #Then get the min date for each product id. That will be the first year date
+#How to get it? - Basically, group by the product_id, then choose year, then use .transform() method and specify 'min' as argument inside .transform
