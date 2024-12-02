@@ -9,3 +9,5 @@ def find_customers(customer: pd.DataFrame, product: pd.DataFrame) -> pd.DataFram
     df = customer.merge(product,on='product_key',how='left')
     df2 = df.groupby('customer_id').agg(total_products_bought=('product_key','nunique')).reset_index()
     return df2.loc[df2['total_products_bought']==product['product_key'].nunique(),'customer_id'].to_frame('customer_id')
+
+
