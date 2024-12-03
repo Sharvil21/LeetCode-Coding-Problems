@@ -1,6 +1,5 @@
 #Pandas Solution
 import pandas as pd
-import pandas as pd
 
 def find_primary_department(employee: pd.DataFrame) -> pd.DataFrame:
     
