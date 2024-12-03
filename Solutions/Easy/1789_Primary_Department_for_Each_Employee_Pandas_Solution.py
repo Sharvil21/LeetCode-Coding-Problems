@@ -1,4 +1,5 @@
 #Pandas Solution
+#Logic is to sort the values by employee id ascending the primary_flag descending
 import pandas as pd
 
 def find_primary_department(employee: pd.DataFrame) -> pd.DataFrame:
