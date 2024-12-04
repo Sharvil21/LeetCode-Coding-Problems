@@ -11,3 +11,8 @@ def find_primary_department(employee: pd.DataFrame) -> pd.DataFrame:
 
 #One Liner Solution
 #Similar solution as previous, but in this, we remove the inplace=True argument from both methods, and use both the methods in the same line 
+import pandas as pd
+
+def find_primary_department(employee: pd.DataFrame) -> pd.DataFrame:
+    
+    return employee.sort_values(by=['employee_id','primary_flag'],ascending=[True,False]).drop_duplicates(subset=['employee_id'],keep='first')[['employee_id','department_id']]
