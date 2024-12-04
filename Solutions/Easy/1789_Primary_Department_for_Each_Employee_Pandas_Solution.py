@@ -10,4 +10,4 @@ def find_primary_department(employee: pd.DataFrame) -> pd.DataFrame:
     return employee[['employee_id','department_id']]
 
 #One Liner Solution
-#Similar solution as previous, but in this, we remove the inplace=True argument from both methods, and use 
+#Similar solution as previous, but in this, we remove the inplace=True argument from both methods, and use both the methods in the same line 
