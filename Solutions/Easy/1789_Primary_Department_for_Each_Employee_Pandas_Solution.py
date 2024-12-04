@@ -9,4 +9,4 @@ def find_primary_department(employee: pd.DataFrame) -> pd.DataFrame:
     employee.drop_duplicates(subset=['employee_id'],keep='first',inplace=True)
     return employee[['employee_id','department_id']]
 
-#
+#One Liner Solution
