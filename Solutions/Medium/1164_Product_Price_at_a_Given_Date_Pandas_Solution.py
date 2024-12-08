@@ -3,4 +3,5 @@
 #Then, get only those rows for product_id where the change date is <= 2019-08-16
 #Drop the duplicates and keep only the last value.
 #Create another dataframe from the original (sorted one obviously) and drop the duplicates. This is for the test cases where the product_id change_date is always graeter than 2019-08-16.
+#Do a Left JOIN with the first data frame and the second one on product_id
 import pandas as pd
