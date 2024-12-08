@@ -1,1 +1,2 @@
 --MySQL Solution
+--First, use SUM() OVER() window function to get the cumulative sum for each turn
