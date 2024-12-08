@@ -8,3 +8,10 @@
 #use the .fillna() method to fill those NaN values as 10.
 #Return the desired columns after renaming them
 import pandas as pd
+
+def price_at_given_date(products: pd.DataFrame) -> pd.DataFrame:
+    products.sort_values(by=['product_id','change_date'],ascending=[True,True],inplace=True)
+    last_price = products.loc[products['change_date'] <= pd.to_datetime('2019-08-16')].drop_duplicates(subset=['product_id'],keep='last').reset_index(drop=True)
+    df = products.drop_duplicates(subset='product_id',keep='first')
+    return df.merge(last_price,on='product_id',how='left').fillna(10)[['product_id','new_price_y']].rename(columns={'new_price_y':'price'})
+
