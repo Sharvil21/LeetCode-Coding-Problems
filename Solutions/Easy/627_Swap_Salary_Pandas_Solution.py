@@ -1,2 +1,2 @@
 #Pandas Solution
-#First solution
+#First solution: Using .replace mnethod
