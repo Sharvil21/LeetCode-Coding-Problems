@@ -1,5 +1,5 @@
 #Pandas Solution
-#First solution: Using .replace mnethod
+#First solution: Using .replace method on the column
 import pandas as pd
 
 def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
@@ -7,4 +7,4 @@ def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
     return salary
 
 #Another Pandas Solution
-#
+#Using .replace method directly
