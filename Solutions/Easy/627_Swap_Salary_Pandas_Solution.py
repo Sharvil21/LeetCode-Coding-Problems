@@ -14,3 +14,4 @@ def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
     return salary.replace({'f':'m','m':'f'})
 
 #Using if else condition
+
