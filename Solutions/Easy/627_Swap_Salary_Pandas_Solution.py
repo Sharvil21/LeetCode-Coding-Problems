@@ -8,3 +8,4 @@ def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
 
 #Another Pandas Solution
 #Using .replace method directly
+salary.replace({'f':'m','m':'f'})
