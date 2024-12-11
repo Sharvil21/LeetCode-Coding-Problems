@@ -7,3 +7,4 @@ def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
     return salary
 
 #Another Pandas Solution
+#
