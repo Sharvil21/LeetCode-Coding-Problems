@@ -13,10 +13,10 @@ import pandas as pd
 def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
     return salary.replace({'f':'m','m':'f'})
 
-#Using if else condition
+#Using if else condition and list comprehension
 import pandas as pd
 
 def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
     salary['sex'] = ['m' if x=='f' else 'f' for x in salary.sex]
     return salary
-    
+ 
