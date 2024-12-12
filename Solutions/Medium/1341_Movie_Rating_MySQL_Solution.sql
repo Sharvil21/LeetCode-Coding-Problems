@@ -1,1 +1,2 @@
 --MySQL Solution
+--First, write a SELECT query to get the name of the review that has the highest reviews
