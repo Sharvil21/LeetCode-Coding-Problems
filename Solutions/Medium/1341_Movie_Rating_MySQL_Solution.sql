@@ -4,3 +4,4 @@
 --Then, in another CTE, get the Average ratings for all movies by JOINing the movies table with MovieRating Table
 -- Use the AVG() function to get the ratings. Don't forget to use WHERE clause to filter only those rows where the created_at is in FEB 2020. Sort the values.
 --Also, for both CTEs make sure to add LIMIT 1 as it causes problems when used in a UNION
+-- Then, first write a select query to get the name from the first CTE then UNION ALL then another select query to get the movie name from second CTE
