@@ -2,4 +2,5 @@
 --First, write a SELECT query to get the name of the review that has the highest reviews
 --This can be done by using COUNT() function along with group by. Order by this value DESCENDING and the name ASCENDING. Put this query in a CTE
 --Then, in another CTE, get the Average ratings for all movies by JOINing the movies table with MovieRating Table
--- Use the AVG() function to get the ratings. Don't forget to use WHERE clause to filter only those rows where the created_at is in FEB 2020
+-- Use the AVG() function to get the ratings. Don't forget to use WHERE clause to filter only those rows where the created_at is in FEB 2020. Sort the values.
+--Also, for both CTEs make sure to add LIMIT 1 as it causes problems when used in a UNION
