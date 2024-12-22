@@ -5,6 +5,7 @@
 #Get the corresponding lat_lon values from the 1st df. Then get the corresponding tiv_2015 values from the other df
 #Lastly, use the .loc[] in insurance DataFrame, and use in the .isin() method to only filter out those rows which satisfy the condition of the values we get from both the other dataframes we created
 #Get the sum, then create the dataframe
+#Return the output by creating a new dataframe
 import pandas as pd
 
 def find_investments(insurance: pd.DataFrame) -> pd.DataFrame:
