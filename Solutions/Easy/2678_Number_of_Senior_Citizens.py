@@ -12,7 +12,7 @@ class Solution:
 
         return count
 
-#Second Solution - A bit concise
+#Second Solution - A bit concise code. Almost same time complexity:
 
 class Solution(object):
     def countSeniors(self, details):
