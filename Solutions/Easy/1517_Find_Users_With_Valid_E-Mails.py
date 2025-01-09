@@ -6,3 +6,7 @@ def valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 
 
 #Second Pandas solution using .query() method
+import pandas as pd
+
+def valid_emails(users: pd.DataFrame) -> pd.DataFrame:
+    return users.query("mail.str.contains('^[A-Za-z][\w\.\-]*@leetcode\.com$')")
