@@ -1,1 +1,1 @@
-#Pandas Solution using .rank() Dense Rank Mehtod
+#Pandas Solution using .rank() Dense Rank Method
