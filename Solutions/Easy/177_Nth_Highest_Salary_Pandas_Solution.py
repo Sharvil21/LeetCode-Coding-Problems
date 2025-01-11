@@ -8,3 +8,5 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
         return pd.DataFrame({f'getNthHighestSalary({N})':[None]})
 
     return employee.loc[employee['rankk']==N,'salary'].drop_duplicates().to_frame(f'getNthHighestSalary({N})')
+
+#
