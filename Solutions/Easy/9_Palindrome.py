@@ -1,6 +1,6 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        if x < 0 or x%10 == 0:
+        if x < 0:
             return False
         else:
             y = str(x)
