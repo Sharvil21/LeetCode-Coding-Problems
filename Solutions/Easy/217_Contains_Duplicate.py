@@ -16,4 +16,7 @@ class Solution:
         
         return False
             
-            
+# Simple solution using set in just 1 line
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(nums) != len(set(nums))            
