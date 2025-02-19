@@ -1,3 +1,4 @@
+#First Solution. Will add 2nd one later
 class Solution:
     def hammingWeight(self, n: int) -> int:
         notation = bin(n)[2:]
