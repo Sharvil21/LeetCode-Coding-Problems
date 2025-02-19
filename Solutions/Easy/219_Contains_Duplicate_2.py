@@ -7,3 +7,16 @@ class Solution:
                     return True
         
         return False
+
+#2nd solution using Dictionary and enumerate:
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+       empty_dict = {}
+
+       for index, value in enumerate(nums):
+        if value in empty_dict and index - empty_dict[value] <=k:
+            return True
+        else:
+            empty_dict[value] = index
+        
+       return False
