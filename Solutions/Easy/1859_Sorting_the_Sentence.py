@@ -13,4 +13,11 @@ class Solution:
         return ' '.join(output)
 
 #Second Solution
- 
+class Solution:
+    def sortSentence(self, s: str) -> str:
+        new_arr = [i[::-1] for i in s.split()]
+        new_arr.sort()
+        output = ''
+        for i in new_arr:
+            output += ' ' + i[1:][::-1]
+        return output.strip() 
