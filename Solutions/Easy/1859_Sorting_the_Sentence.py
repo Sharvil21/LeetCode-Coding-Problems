@@ -11,4 +11,5 @@ class Solution:
             output.append(j[1:][::-1])
         
         return ' '.join(output)
-        
+
+# 
