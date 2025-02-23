@@ -1,4 +1,4 @@
-#First Solution
+#First Solution; Beats 66.64% currently
 class Solution:
     def sortSentence(self, s: str) -> str:
         copy = s.split()[::-1]
