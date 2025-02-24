@@ -22,4 +22,4 @@ class Solution:
             output += ' ' + i[1:][::-1]
         return output.strip()
 
-# 
+#Third Solution 
