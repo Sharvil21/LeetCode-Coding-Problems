@@ -20,4 +20,6 @@ class Solution:
         output = ''
         for i in new_arr:
             output += ' ' + i[1:][::-1]
-        return output.strip() 
+        return output.strip()
+
+# 
