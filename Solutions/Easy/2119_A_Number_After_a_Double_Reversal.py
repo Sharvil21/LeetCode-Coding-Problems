@@ -5,4 +5,6 @@ class Solution:
             return (str(num)[::-1])[::-1] == str(num)
         else:
             return False
-            
+    
+
+# 
