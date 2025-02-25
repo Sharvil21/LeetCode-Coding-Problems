@@ -7,4 +7,4 @@ class Solution:
             return False
     
 
-# 
+#Second Solution: 1 Liner 
