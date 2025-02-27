@@ -6,6 +6,7 @@ BEGIN
       WITH cte AS (SELECT *, DENSE_RANK() OVER(ORDER BY salary DESC) AS rnk
       FROM Employee)
       SELECT
-      salary FROM cte WHERE rnk = n
+      DISTINCT salary
+      FROM cte WHERE rnk = n
   );
 END
