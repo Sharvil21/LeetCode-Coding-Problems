@@ -7,3 +7,5 @@ def second_highest_salary(employee: pd.DataFrame) -> pd.DataFrame:
     
     employee['rnk'] = employee['salary'].rank(method='dense',ascending=False)
     return employee.query("rnk == 2")['salary'].drop_duplicates().to_frame("SecondHighestSalary")
+
+#
