@@ -1,4 +1,4 @@
-#Pandas Solution
+#Pandas Solution using .rank() method
 import pandas as pd
 
 def second_highest_salary(employee: pd.DataFrame) -> pd.DataFrame:
