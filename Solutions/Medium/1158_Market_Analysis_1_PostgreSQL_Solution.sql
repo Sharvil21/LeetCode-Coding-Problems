@@ -14,3 +14,4 @@ FROM cte
 GROUP BY 1,2
 ORDER By 1
 
+--Another PostgreSQL Solution
