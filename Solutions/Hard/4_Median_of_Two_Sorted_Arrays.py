@@ -9,4 +9,4 @@ class Solution:
             median_value = (final_array[total_size // 2 - 1] + final_array[total_size // 2]) / 2
         return median_value
 
-#
+#Second Python Solution
