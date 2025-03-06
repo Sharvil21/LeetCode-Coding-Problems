@@ -11,3 +11,6 @@ DISTINCT product_id, product_name
 FROM Product
 JOIN Sales USING(product_id)
 WHERE product_id NOT IN (SELECT product_id FROM cte)
+
+
+--
