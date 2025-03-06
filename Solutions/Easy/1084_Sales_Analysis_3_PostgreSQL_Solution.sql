@@ -13,4 +13,4 @@ JOIN Sales USING(product_id)
 WHERE product_id NOT IN (SELECT product_id FROM cte)
 
 
---
+--Another postgreSQL Solution
