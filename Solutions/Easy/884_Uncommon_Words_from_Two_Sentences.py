@@ -1,4 +1,4 @@
-#First Solution: Create an empty dictionary, split the strings and get the count of each word in the dictionary. Then append only those words that have a value of 1 in an empty list
+#First Solution: Create an empty dictionary, split the strings and get the count of each word in the dictionary. Then append only those words that have a value of 1 in an empty list. Beats 100%
 
 class Solution:
     def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
