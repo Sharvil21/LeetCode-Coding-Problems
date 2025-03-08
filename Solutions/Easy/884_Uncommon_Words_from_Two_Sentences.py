@@ -23,3 +23,26 @@ class Solution:
         return op
 
 #Modification of first solution
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        ans = {}
+        op = []
+        for i in s1.split():
+            if i in ans:
+                ans[i] += 1
+            else:
+                ans[i] = 1
+
+        for i in s2.split():
+            if i in ans:
+                ans[i] += 1
+            else:
+                ans[i] = 1
+
+        for i in ans:
+            if ans[i]==1:
+                op.append(i)
+
+
+        return op
+
