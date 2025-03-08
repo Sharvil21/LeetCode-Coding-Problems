@@ -22,5 +22,3 @@ class Solution:
 
         return op
 
-#Another Python Solution: Using Counter from collections library
-from collections import Counter
