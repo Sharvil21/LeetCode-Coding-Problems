@@ -9,4 +9,4 @@ class Solution:
                     ans.append(i)
         return ans
 
-#Another Python Solution
+#Another Python Solutioni using List Comprehension
