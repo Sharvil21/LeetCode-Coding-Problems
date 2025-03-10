@@ -1,1 +1,2 @@
-#Python Solution
+#Python Solutioin
+class Solution:
