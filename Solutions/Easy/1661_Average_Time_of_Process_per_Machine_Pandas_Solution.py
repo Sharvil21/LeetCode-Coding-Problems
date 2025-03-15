@@ -1,1 +1,1 @@
-#Pandas Solution using .diff() method. First sort the dataframe by machine_id, process_id then the timestamp. Then group by machine_id and process_id, and use the .diff() method on the timestamp values to get the difference.
+#Pandas Solution using .diff() method. First sort the dataframe by machine_id, process_id then the timestamp. Then group by machine_id and process_id, and use the .diff() method on the timestamp values to get the difference. Then drop the na values in place. Then lastly, group by again by the machine_id and get the mean.
