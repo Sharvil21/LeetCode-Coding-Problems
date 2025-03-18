@@ -14,3 +14,4 @@ def gameplay_analysis(activity: pd.DataFrame) -> pd.DataFrame:
     activity.drop_duplicates(subset=['player_id'],keep='first',inplace=True)
     value = len(activity[activity['date_diff']==1])/activity['player_id'].nunique()
     return pd.DataFrame({'fraction':[value]}).round(2)
+#
