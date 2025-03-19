@@ -1,1 +1,3 @@
 #Pandas Solution
+#Simple Approach
+
