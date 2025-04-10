@@ -10,3 +10,5 @@ class Solution:
         return " ".join(s.split()[:k])
 
 #The idea is to first use .split() method to split the sentence in a list
+#Then use indexing to get only the words till the value 'k'.
+#And then lastly use " ".join() method to turn the list into a sentence and return it
