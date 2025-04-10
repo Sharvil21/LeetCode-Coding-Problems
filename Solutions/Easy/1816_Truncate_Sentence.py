@@ -4,3 +4,4 @@ class Solution:
         return ' '.join(s.split()[:k])
 
 
+#Attempting again
