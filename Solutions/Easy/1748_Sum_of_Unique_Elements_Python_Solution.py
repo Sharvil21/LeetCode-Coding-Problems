@@ -12,3 +12,5 @@ class Solution:
             if total == 1:
                 unique_elements.append(num)
         return sum(unique_elements)
+
+
