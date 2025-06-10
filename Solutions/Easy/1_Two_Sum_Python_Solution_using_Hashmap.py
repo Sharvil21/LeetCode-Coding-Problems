@@ -12,3 +12,5 @@ class Solution:
                 return [index, hashmap[difference]]
             else:
                 hashmap[value] = index
+
+#This has O(n) time complexity because retriving data from a Hashmap is O(1)
